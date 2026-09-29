@@ -30,3 +30,15 @@
 **`df.isna()`** - проверяет на na
 **`df.dropna()`** - удаляет строки содержащие na
 **`df['col'].fillna(value)`** - заполняет na значениями
+**`df[col].map(dict)`** - заменяет значения по словарю (старое значение:новое значение)
+**`pd.to_numeric(series, errors='coerce')`** - преобразовать значения в series в int и вернуть nan если не число
+**`pd.concat([df1, df2, ...], axis=0,ignore_index=False)`** - сконкатенировать таблицы (0/1 - по строкам/столбцам, False/True-создать новый индекс)
+**`pd.merge(left_df, right_df, on='column', how='inner')`** - объединяет таблицы(on - название столбца, how=inner/outer/left/right - пересечение, объединение, левое, правое по on)
+**`df.groupby('column').aggfunc`** - объединяет значения колонки с одинаковыми значениям, aggfunc - mean(),sum() и тд
+**`df.groupby('col').agg(new_name=('col','func'))`** - тоже самое, только может сделать сразу много разных операций
+**`for name, group in df.groupby('col'):`** - итерация по сгруппированным строкам(то есть по уникальным значениям в колонке)
+**`df.groupby('col').filter(func):`**  - группировать только колонки в которых выполняется func (func-  лямбда функция)
+**`df.sort_values(by, ascending=[True∕False])`** - сортировка (в by можно передать массив, чтобы сортировка имела несколько приоритетов)
+**`df.set_index(['col1', 'col2'])`** - создаёт двухуровневый индекс
+**`df.groupby(['col1', 'col2']).aggfunc()`** - группировка по нескольким столбцам (получается двухуровневый индекс), после чего применяет к ним функции
+**`pd.pivot_table(df, values, index, columns, aggfunc=['func1', 'func2', ...], fill_value, margins=False, dropna=True)`** - сводная таблица, чет не хочу пока
