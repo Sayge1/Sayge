@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ЦУ/Дискра/Комбинаторика.md",
+                "file": "Тренировки.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Комбинаторика"
+              "title": "Тренировки"
             }
           }
         ]
@@ -160,8 +160,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "bbf56eed35ae2217",
+  "active": "96278052c59229e6",
   "lastOpenFiles": [
+    "ЦУ/Дискра/Комбинаторика.md",
     "ЦУ/Экономика/Эластичность.md",
     "ЦУ/Экономика/Теория рынка.md",
     "ЦУ/Экономика/Базовая теория.md",
